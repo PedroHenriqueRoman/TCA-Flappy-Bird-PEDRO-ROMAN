@@ -1,10 +1,8 @@
-
 import com.sun.jna.Library;
 import com.sun.jna.Native;
 
 public class ControleTeclasJogoComJNA {
-    
-    
+
     public interface Crt extends Library {
         Crt INSTANCE = Native.load("msvcrt", Crt.class);
         int _kbhit();
